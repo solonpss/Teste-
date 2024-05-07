@@ -18,11 +18,15 @@
 </head>
 <body>
     <h1>Cadastro</h1>
-    <form id="cadastroForm">
+    <form id="cadastroForm" enctype="multipart/form-data">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
         <label for="telefone">Telefone:</label>
         <input type="text" id="telefone" name="telefone" required><br><br>
+        <label for="foto1">Foto 1:</label>
+        <input type="file" id="foto1" name="foto1" accept="image/*" required><br><br>
+        <label for="foto2">Foto 2:</label>
+        <input type="file" id="foto2" name="foto2" accept="image/*" required><br><br>
         <button type="submit">Cadastrar</button>
     </form>
 
